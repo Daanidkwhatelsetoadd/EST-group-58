@@ -27,26 +27,28 @@ stopt  = min([Supply.Timeinfo.End, Demand.Timeinfo.End]);
 % transport from supply
 aSupplyTransport = 0.00; % Dissipation coefficient
 LDratioSupply = 136.1;% ratio of the length over the diameter of the pipes to the supply
-AreaSupply = 6.79;% area of the pip to the supply
+AreaSupply = 6.79;% area of the pipe to the supply
 heightDifference = 300;% height difference between the reservoirs
 pipeRoughnessSupply = 0.0001; %coefficient for the pipe roughness
 PipeLengthSupply = 400;% length of the pipes to the supply
+numberOfPipes = 10
+
 
 
 
 
 
 % injection system
-aInjection = 0.0; % Dissipation coefficient
+aInjection = 0.3; % Dissipation coefficient
 
 % storage system
 EStorageMax     = 361000000*unit("kWh"); % Maximum energy
 EStorageMin     = 0.0*unit("kWh"); % Minimum energy
 EStorageInitial = 0.0*unit("kWh"); % Initial energy
-bStorage        = 0/unit("s");  % Storage dissipation coefficient
+bStorage        = 0.05/unit("year");  % Storage dissipation coefficient
 
 % extraction system
-aExtraction = 0; % Dissipation coefficient
+aExtraction = 0.05; % Dissipation coefficient
 
 % transport to demand
 aDemandTransport = 0.; % Dissipation coefficient
