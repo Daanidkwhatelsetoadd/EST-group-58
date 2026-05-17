@@ -27,3 +27,8 @@ unit("Wh")  = unit("W") *unit("h");
 unit("kWh") = unit("kW")*unit("h");
 unit("MWh") = unit("MW")*unit("h");
 unit("GWh") = unit("GW")*unit("h");
+
+% general
+unit("g") = 9.81;
+unit("rho") = 1000;
+unit("mu") = 0.0013;
