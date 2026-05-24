@@ -25,13 +25,18 @@ stopt  = min([Supply.Timeinfo.End, Demand.Timeinfo.End]);
 %% System parameters
 
 % transport from supply
-aSupplyTransport = 0.00; % Dissipation coefficient
+aSupplyTransport = 1; % Dissipation coefficient
 LDratioSupply = 136.1;% ratio of the length over the diameter of the pipes to the supply
 AreaSupply = 6.79;% area of the pipe to the supply
-heightDifference = 300;% height difference between the reservoirs
-pipeRoughnessSupply = 0.0001; %coefficient for the pipe roughness
+heightDifference = 1;% height difference between the reservoirs
+pipeRoughnessSupply = 0.00015; %coefficient for the pipe roughness
 PipeLengthSupply = 400;% length of the pipes to the supply
-numberOfPipes = 10
+numberOfPipes = 3;
+gAccel = 9.81;
+rho = 1000;
+mu = 0.0013;
+dynamicViscosity = 0.001306;
+PipeDiameter = 2.94;
 
 
 
