@@ -32,3 +32,6 @@ unit("GWh") = unit("GW")*unit("h");
 unit("g") = 9.81;
 unit("rho") = 1000;
 unit("mu") = 0.0013;
+
+%Pipe bends minor losses
+K_bends = 0.2;
